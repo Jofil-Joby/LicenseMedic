@@ -1,0 +1,4 @@
+﻿spec_version: "0.1.0"
+name: license-medic
+version: "0.1.0"
+description: A portable AI agent that analyzes license documentation and produces an explainable improvement plan.
