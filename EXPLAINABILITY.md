@@ -1,11 +1,13 @@
-﻿## Decision and Reasoning
+# Explainability Contract: LicenseMedic
 
-LicenseMedic makes an assessment by analyzing evidence related to license documentation. It connects detected problems to supporting evidence and practical actions.
+## Decision
 
-## Inputs and Data Sources
+LicenseMedic decides whether the repository exposes a recognizable license file. When none is detected, it reports the missing documentation and recommends adding an appropriate license.
 
-LicenseMedic uses source files, configuration, project structure, and relevant license documentation data from the inspected project.
+## Inputs
 
-## Limits and Constraints
+It checks filenames beginning with LICENSE in the inspected project. The decision is based on repository-visible documentation.
 
-LicenseMedic is limited when required information is missing, inaccessible, generated dynamically, or incomplete.
+## Limits
+
+It does not determine which license is legally or commercially appropriate and does not validate the contents of an existing license. Licenses managed through external legal or platform processes may not be visible.
